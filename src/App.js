@@ -7,7 +7,7 @@ import Sort from './components/Sort';
 import './scss/app.scss';
 
 function App() {
-  // https://628e6b8e368687f3e716a99d.mockapi.io/items
+  
   const [items, setItems] = useState([]);
 
   useEffect(() => {
