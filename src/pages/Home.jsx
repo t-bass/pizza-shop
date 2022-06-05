@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactPaginate from 'react-paginate';
 
 import Categories from '../components/Categories';
 import PizzaBlock from '../components/PizzaBlock';
