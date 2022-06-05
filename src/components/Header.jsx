@@ -10,7 +10,7 @@ function Header({ searchValue, setSearchValue }) {
           <div className='header__logo'>
             <img width='38' src={logoSvg} alt='Pizza logo' />
             <div>
-              <h1>React Pizza</h1>
+              <h1>Pizza Shop</h1>
             </div>
           </div>
         </Link>

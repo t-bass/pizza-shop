@@ -11,7 +11,7 @@
   font-size: 16px;
 
   &:focus {
-    border: 2px solid #fe5f1e;
+    border: 1px solid #fe5f1e;
 
     opacity: 0.5;
   }
@@ -35,5 +35,7 @@
 
   &:hover {
     opacity: 0.8;
+
+    fill: #fe5f1e;
   }
 }

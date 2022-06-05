@@ -53,6 +53,7 @@ const Search = ({ searchValue, setSearchValue }) => {
       />
       {searchValue && (
         <svg
+          onClick={() => setSearchValue('')}
           className={styles.close}
           dataName='Capa 1'
           id='Capa_1'
