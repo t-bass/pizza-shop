@@ -19,7 +19,6 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   // стэйт для пагинации
   const [currentPage, setCurrentPage] = useState(1);
-  // вынесли state из дочерних компонентов cart и categories в родительский
 
   const onChangeCategory = (id) => {
     dispatch(setCategoryId(id));
@@ -27,10 +26,9 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoading(true);
-
     const sortBy = sort.sortProperty.replace('-', '');
     const order = sort.sortProperty.includes('-') ? 'asc' : 'desc';
-    const category = categoryId > 0 ? `category=$(categoryId)` : '';
+    const category = categoryId > 0 ? `category=${categoryId}` : '';
     // Поиск пицц через backend (mockapi криво работает :(((...     )
     const search = searchValue ? `&search=${searchValue}` : '';
 
